@@ -1,0 +1,88 @@
+.Game {  
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+  width: fit-content;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 2em;
+  border-bottom: 2px solid purple;  
+  text-align: center;
+}
+.Game-dice-section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.Game-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Game-reroll {
+  font-size: 2em;   
+  color: rgba(7, 6, 6, 0.986);  
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(
+    to right,
+    #6df1e9 0%,
+    #76e2a8 51%,
+    #2be2d6 100%
+  );
+  border-radius: 0.5rem;
+  border: none;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.Game-reroll:hover {
+  cursor: pointer;
+  background-position: right center;
+}
+
+.Game-reroll:active,
+.Game-reroll:focus {
+  outline: none;
+}
+
+.Game-reroll:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  opacity: 0.5;
+  
+}
+
+.Game-header {  
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  width: 128%;  
+  padding: 1em;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  min-width: 20%;
+  box-shadow: 0 19px 38px rgb(255, 251, 251), 0 15px 12px rgba(0, 0, 0, 0.1);
+  background-color: #000000a9;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
